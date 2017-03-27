@@ -1,0 +1,34 @@
+/*
+ * Start Bootstrap - Full (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    
+   background-color:none; 
+   font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+/*
+
+https://farm3.staticflickr.com/2892/33231129840_83938e5d0d_o.jpg
+http://farm3.static.flickr.com/2543/4042895761_d26099b1bc_o.jpg
+https://farm3.staticflickr.com/2831/33573429206_de3ec72cf3_o.jpg
+https://farm3.staticflickr.com/2831/33573429206_de3ec72cf3_o.jpg
+/Users/jeremym/Sites/ac2/images/home2.jpg
+*/
+
+
+.full {
+    background: url('https://farm3.staticflickr.com/2831/33573429206_de3ec72cf3_o.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+div.container{height:75px;}
