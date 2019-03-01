@@ -1,143 +1,149 @@
-<!DOCTYPE html>
-<html class="full" lang="en">
-<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
 
-<head>
-
+<!doctype html>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="icon" href="">
 
-    <title>Full - Start Bootstrap Template</title>
+    <title>Starter Template for Bootstrap</title>
 
-    <!-- Bootstrap Core CSS -->
-    
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <!--<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 
-    <!-- Custom CSS -->
-    <link href="css/full.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
     <style>
-    .navItem{
+
+
+      body {
+          background: url('https://raw.githubusercontent.com/watzek/ac2/master/images/home2.jpg') no-repeat center center fixed;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          background-size: cover;
+          -o-background-size: cover;
+      }
+
+      body {
+          margin-top: 50px; /* Required margin for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+
+         background-color:none;
+         font-family:Verdana, Arial, Helvetica, sans-serif;
+      }
+    .nav-item > a{
+      color:white !important;
+      font-size:20px;
+      margin-right:30px;
+    }
+    body {
+      padding-top: 5rem;
+    }
+    .starter-template {
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+
+    .btn-outline-success{
+      border-color: #96935F;
+      color: #96935F;
+
 
     }
+
+    .btn-outline-success:hover {
+        color: #fff;
+        background-color: #96935F;
+        border-color: #96935F;
+    }
+    .btn:focus, .btn:hover {
+        text-decoration: none;
+    }
+
     </style>
 
+  </head>
 
-</head>
+  <body>
 
-<body style='background-color:transparent;'>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#"><img src='http://accessceramics.org/images/accessCeramics_logo.png' style='height:50px;'></a>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#"><img src='http://accessceramics.org/images/accessCeramics_logo.png' style='height:50px;'></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Browse</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">all items</a>
+  						<a class="dropdown-item" href="#">artists</a>
+  						<a class="dropdown-item" href="#">glazing/surface</a>
+  						 <a class="dropdown-item" href="#">material</a>
+  						 <a class="dropdown-item" href="#">object type</a>
+  						 <a class="dropdown-item" href="#">technique</a>
+  						 <a class="dropdown-item" href="#">temperature</a>
+  						 <a class="dropdown-item" href="#">institutions</a>
+
+
+
+
+
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-				   <li class="dropdown">
-					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style='padding-top:25px;font-size:20px;color:white;padding-right:30px;'>Browse <span class="caret"></span></a>
-					  <ul class="dropdown-menu">
-						<li><a href="#">all items</a></li>
-						<li><a href="#">artists</a></li>
-						<li><a href="#">glazing/surface</a></li>
-						 <li><a href="#">material</a></li>
-						 <li><a href="#">object type</a></li>
-						 <li><a href="#">technique</a></li>
-						 <li><a href="#">temperature</a></li>
-						 <li role="separator" class="divider"></li>
-						 <li><a href="#">institutions</a></li>
-					  </ul>
-					</li>
-                    <li>
-                        <a href="#" style='padding-top:25px;font-size:20px;color:white;padding-right:30px;'>Artists</a>
-                    </li>
-                    <li>
-                        <a href="#" style='padding-top:25px;font-size:20px;color:white;padding-right:30px;'>Contribute</a>
-                    </li>
-
-				   <li class="dropdown">
-					  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style='padding-top:25px;font-size:20px;color:white;padding-right:30px;'>Information <span class="caret"></span></a>
-					  <ul class="dropdown-menu">
-						<li><a href="#">about</a></li>
-						<li><a href="#">f.a.q.</a></li>
-						<li><a href="#">help</a></li>
-						<li><a href="#">member login</a></li>
-						 <li><a href="#">resources</a></li>
-
-					  </ul>
-					</li>
-
-
-
-                </ul>
-
-                      <form class="navbar-form navbar-right" style='padding-top:10px;'>
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
-      </form>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Artists</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">Contribute</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Information</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
             </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
     </nav>
 
-
-    <!-- Page Content -->
-    <div class="container" style='margin-top:100px;'>
-        <div class="row">
-            <div class="col-md-4  col-sm-2  panel" style='color:white;background-color:transparent;'>
-            <p class='lead'>accessCeramics is a growing collection of contemporary ceramics images by recognized artists enhancing ceramics education worldwide.</p>
-             </div>
-        </div>
-        <!-- /.row -->
-        <div class="row" style='margin-top:300px;'>
-            <div class="col-md-4  col-sm-2 col-xs-6 panel" style='color:white;background-color:transparent;'>
-                 <p class='lead'>recent additions:</p>
-                <h4 class="newsItem"><a href="https://t.co/9XPR6Ea0k0" style='color:white;'>Margaret Haydon (March 24th)</a></h4>
-            	<h4 class="newsItem"><a href="https://t.co/II4ehleMmN" style='color:white;'>Angelique Brickner (March 13th)</a></h4>
-            	<h4 class="newsItem"><a href="https://t.co/eYliBr2GN9" style='color:white;'>Anat Shiftan (February 17th)</a></h4>
-
-            </div>
-
-            <div class='col-md-3 col-md-offset-5' style='margin-top:50px;'>
-        		<span class="align-bottom" style='color:white;'>image: Wing Plates - Careen Stoll</span>
-            </div>
-        </div>
-        <!-- /.row -->
-
-    </div>
-    <!-- /.container -->
-<footer class="navbar-fixed-bottom"> content</footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <main role="main" class="container">
 
 
+      <div class="row">
+          <div class="col-md-4  col-sm-2  panel" style='color:white;background-color:transparent;'>
+          <p class='lead'>accessCeramics is a growing collection of contemporary ceramics images by recognized artists enhancing ceramics education worldwide.</p>
+           </div>
+      </div>
 
-</body>
+<!--
+      <div class="starter-template">
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+      </div>
+-->
+    </main><!-- /.container -->
 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
