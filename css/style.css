@@ -50,4 +50,25 @@ text-align: center;
 
 
 /***************** interior **********************************/
-h2{color:white;}
+
+
+.interior{
+  background-color:white;
+  min-height:500px;
+  padding:30px;
+
+
+
+}
+
+
+
+
+
+
+
+
+@media (min-width: 1200px)
+nav {
+    max-width: 1140px;
+}
